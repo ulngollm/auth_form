@@ -11,16 +11,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Authorization(),
       theme: ThemeData(
-        primaryColor: Color(0xFF009688),
+        primaryColor: Colors.teal,
         hintColor: Colors.black38,
+        primaryTextTheme: TextTheme(
+          headline6: TextStyle(
+            color: Colors.black87,
+          ),
+        ),
         appBarTheme: AppBarTheme(
           centerTitle: true,
           color: Colors.white,
-          textTheme: TextTheme(
-            headline6: TextStyle(
-              color: Colors.black87
-            )
-          )
+          iconTheme: IconThemeData(color: Colors.black87),
         ),
       ),
     );
