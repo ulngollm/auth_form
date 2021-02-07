@@ -9,8 +9,9 @@ class PassRecovery extends StatelessWidget {
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(top: 300, right: 40, left: 40),
+          padding: const EdgeInsets.symmetric(horizontal: 40),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
                 decoration: InputDecoration(

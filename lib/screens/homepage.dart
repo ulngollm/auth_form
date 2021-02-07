@@ -7,15 +7,8 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Приложение'),
       ),
-      body: Padding(
-        padding: EdgeInsets.only(top: 300),
-        child: Align(
-          alignment: Alignment.topCenter,
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 0,vertical: 14.5),
-            child: Text('Главный экран'),
-          ),
-        ),
+      body: Center(
+        child: Text('Главный экран'),
       ),
     );
   }

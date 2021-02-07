@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:homework_1/screens/homepage.dart';
 import 'package:homework_1/screens/pass.dart';
+import 'package:flutter/foundation.dart';
 
 class Authorization extends StatelessWidget {
   @override
+    // print(mediaData);
   Widget build(BuildContext context) {
+  var mediaData = MediaQuery.of(context).size;
+  double paddingTop = MediaQuery.of(context).size.height  / 2;
+  print(paddingTop);
     return Scaffold(
       appBar: AppBar(
         title: Text('Вход'),
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(top: 300, right: 40, left: 40),
+          padding: const EdgeInsets.symmetric(horizontal: 40),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
                 decoration: InputDecoration(
