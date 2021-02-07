@@ -5,11 +5,7 @@ import 'package:flutter/foundation.dart';
 
 class Authorization extends StatelessWidget {
   @override
-    // print(mediaData);
   Widget build(BuildContext context) {
-  var mediaData = MediaQuery.of(context).size;
-  double paddingTop = MediaQuery.of(context).size.height  / 2;
-  print(paddingTop);
     return Scaffold(
       appBar: AppBar(
         title: Text('Вход'),
